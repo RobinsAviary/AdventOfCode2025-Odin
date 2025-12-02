@@ -22,8 +22,6 @@ main :: proc() {
 
 	split_input := strings.split_lines(input_str)
 
-	//fmt.println(split_input)
-
 	direction: Rotation_Direction
 	rotation: int = 50
 	password_count: uint
@@ -64,8 +62,6 @@ main :: proc() {
 		if rotation == 0 {
 			password_count += 1
 		}
-
-		//fmt.print(direction, number, rotation, password_count, "  \\  ")
 	}
 
 	fmt.println(password_count)
